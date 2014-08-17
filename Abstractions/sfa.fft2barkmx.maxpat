@@ -3,9 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 8,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 4
 		}
 ,
 		"rect" : [ 41.0, 90.0, 1389.0, 910.0 ],
@@ -31,7 +30,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-36",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -46,7 +44,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-38",
 					"linecount" : 7,
 					"maxclass" : "comment",
@@ -61,13 +58,12 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-15",
 					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 495.0, 512.0, 128.0 ],
+					"patching_rect" : [ 32.0, 279.0, 512.0, 128.0 ],
 					"text" : "FTM abstraction\nsub abstraction of sfa.bark\ngiven the fft size and the sample rate computes the wts matrix necessary to compute the Bark coefficient from the spectrum of the signal, and output the number of Bark bands (depends on the sampling rate).\n\nThis object is part of the Max porting of the function rastaplp.m from Daniel P. W. Ellis \"PLP and RASTA (and MFCC, and inversion) in MATLAB\nhttp://www.ee.columbia.edu/~dpwe/resources/matlab/rastamat/\nporting of fft2barkmx.m"
 				}
 
@@ -76,12 +72,11 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 24.0,
-					"frgb" : 0.0,
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 459.0, 297.0, 36.0 ],
+					"patching_rect" : [ 32.0, 243.0, 297.0, 36.0 ],
 					"text" : "sfa.fft2barkmx"
 				}
 
@@ -90,14 +85,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-8",
-					"linecount" : 37,
+					"linecount" : 18,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 27.0, 430.0, 420.0 ],
-					"text" : "This file is part of the Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI).\n\nThe Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI) \nis a collection of MAX patches, MAX externals and MATLAB functions \nimplementing ad-hoc mappings to control an arbirtary number of real-valued\ninstrument parameters by variation of the voice timbre.\nThe VCI4DMI can be obtained at http://stefanofasciani.com/vci4dmi.html\nVCI4DMI Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\n\nThe VCI4DMI is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe VCI4DMI is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with Foobar.  If not, see <http://www.gnu.org/licenses/>.\n\nIf you use the VCI4DMI or any part of it in any program or publication,\nplease acknowledge its authors by adding a reference any of these pubblications:\n\nFasciani, S. and Wyse, L. 2012. \"Adapting general purpose interfaces to synthesis\nengines using unsupervised dimensionality reduction techniques and inverse mapping\nfrom features to parameters\". In Proceedings of the 2012 International Computer\nMusic Conference. Ljubljana, Slovenia.\n\nFasciani, S. and Wyse, L. 2013. \"A Self-Organizing Gesture Map for a\nVoice-Controlled Instrument Interface. In Proceedings of the 13th conference\non New Interfaces for Musical Expression\". Daejeon, Korea.\n\nFasciani, S. 2014. \"Voice-Controlled Interface for Digital Musical Instruments\".\nPhD Thesis, National University of Singapore."
+					"patching_rect" : [ 32.0, 27.0, 430.0, 214.0 ],
+					"text" : "The SFA-MaxLib is a collection of Max/MSP objects including FTM externals,\nFTM abstractions and MAX abstractionss.\nSFA-MaxLib Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\nWebsite: www.stefanofasciani.com\n\nThe SFA-MaxLib is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe SFA-MaxLib is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with SFA-MaxLib.  If not, see <http://www.gnu.org/licenses/>."
 				}
 
 			}
@@ -417,9 +411,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 4
 						}
 ,
 						"rect" : [ 29.0, 69.0, 640.0, 480.0 ],
@@ -684,21 +677,40 @@
 								}
 
 							}
+ ],
+						"dependency_cache" : [ 							{
+								"name" : "mnm.q.maxpat",
+								"bootpath" : "/Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
+								"type" : "JSON",
+								"implicit" : 1
+							}
+, 							{
+								"name" : "ftm.object.mxo",
+								"type" : "iLaX"
+							}
+, 							{
+								"name" : "ftm.mess.mxo",
+								"type" : "iLaX"
+							}
+, 							{
+								"name" : "mnm.minmax.mxo",
+								"type" : "iLaX"
+							}
  ]
 					}
 ,
 					"patching_rect" : [ 980.487549, 1098.0, 84.0, 18.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
+						"globalpatchername" : "",
+						"digest" : "",
+						"fontname" : "Arial",
 						"default_fontname" : "Arial",
 						"default_fontsize" : 10.0,
 						"description" : "",
-						"digest" : "",
 						"fontface" : 0,
-						"fontname" : "Arial",
 						"fontsize" : 10.0,
-						"globalpatchername" : "",
-						"tags" : ""
+						"tags" : "",
+						"default_fontface" : 0
 					}
 ,
 					"text" : "p min_2row_mat"
@@ -718,9 +730,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 4
 						}
 ,
 						"rect" : [ 29.0, 69.0, 640.0, 480.0 ],
@@ -985,21 +996,40 @@
 								}
 
 							}
+ ],
+						"dependency_cache" : [ 							{
+								"name" : "mnm.q.maxpat",
+								"bootpath" : "/Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
+								"type" : "JSON",
+								"implicit" : 1
+							}
+, 							{
+								"name" : "ftm.object.mxo",
+								"type" : "iLaX"
+							}
+, 							{
+								"name" : "ftm.mess.mxo",
+								"type" : "iLaX"
+							}
+, 							{
+								"name" : "mnm.minmax.mxo",
+								"type" : "iLaX"
+							}
  ]
 					}
 ,
 					"patching_rect" : [ 939.353516, 955.0, 84.0, 18.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
+						"globalpatchername" : "",
+						"digest" : "",
+						"fontname" : "Arial",
 						"default_fontname" : "Arial",
 						"default_fontsize" : 10.0,
 						"description" : "",
-						"digest" : "",
 						"fontface" : 0,
-						"fontname" : "Arial",
 						"fontsize" : 10.0,
-						"globalpatchername" : "",
-						"tags" : ""
+						"tags" : "",
+						"default_fontface" : 0
 					}
 ,
 					"text" : "p min_2row_mat"
@@ -1222,7 +1252,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1024.984497, 686.0, 115.0, 18.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "sfa.count_min_one.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -1298,7 +1327,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-22",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1397,7 +1425,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1411,7 +1438,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-13",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1482,7 +1508,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-5",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1538,7 +1563,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1552,7 +1576,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2188,36 +2211,36 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "sfa.ceil.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hz2bark.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.count_min_one.js",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mnm.q.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/ftm-and-co/mnm-abstractions",
-				"patcherrelativepath" : "../ftm-and-co/mnm-abstractions",
+				"bootpath" : "/Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hz2bark_vect.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}

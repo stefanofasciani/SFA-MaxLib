@@ -3,9 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 8,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 4
 		}
 ,
 		"rect" : [ 215.0, 69.0, 1160.0, 899.0 ],
@@ -31,7 +30,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-11",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -46,7 +44,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-7",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -61,13 +58,12 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-27",
 					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.346436, 566.0, 525.0, 164.0 ],
+					"patching_rect" : [ 19.346436, 280.25, 525.0, 164.0 ],
 					"text" : "FTM abstraction\ncomputes the energy of the banrk bands an inut spectrum.\n\nThe first inlet is the fmat vector containing the frame spectrum.\nThe second inlet input is a 2 element list containing window/frame size and number N of bark bands (the output vector will have N coefficients).\n\nThe first outlet output is an fmat vector containing the energy on of the N bark bands.\n\nThe second outlet output is an fmat vector containing the energy on of the N bark bands with loudness equalization and cube root compression\n\nWorks only for 48KHz sampling rate."
 				}
 
@@ -76,12 +72,11 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 24.0,
-					"frgb" : 0.0,
 					"id" : "obj-28",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.346436, 530.0, 297.0, 36.0 ],
+					"patching_rect" : [ 19.346436, 244.25, 297.0, 36.0 ],
 					"text" : "sfa.barkspect"
 				}
 
@@ -90,14 +85,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-3",
-					"linecount" : 37,
+					"linecount" : 18,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.346436, 86.0, 430.0, 420.0 ],
-					"text" : "This file is part of the Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI).\n\nThe Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI) \nis a collection of MAX patches, MAX externals and MATLAB functions \nimplementing ad-hoc mappings to control an arbirtary number of real-valued\ninstrument parameters by variation of the voice timbre.\nThe VCI4DMI can be obtained at http://stefanofasciani.com/vci4dmi.html\nVCI4DMI Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\n\nThe VCI4DMI is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe VCI4DMI is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with Foobar.  If not, see <http://www.gnu.org/licenses/>.\n\nIf you use the VCI4DMI or any part of it in any program or publication,\nplease acknowledge its authors by adding a reference any of these pubblications:\n\nFasciani, S. and Wyse, L. 2012. \"Adapting general purpose interfaces to synthesis\nengines using unsupervised dimensionality reduction techniques and inverse mapping\nfrom features to parameters\". In Proceedings of the 2012 International Computer\nMusic Conference. Ljubljana, Slovenia.\n\nFasciani, S. and Wyse, L. 2013. \"A Self-Organizing Gesture Map for a\nVoice-Controlled Instrument Interface. In Proceedings of the 13th conference\non New Interfaces for Musical Expression\". Daejeon, Korea.\n\nFasciani, S. 2014. \"Voice-Controlled Interface for Digital Musical Instruments\".\nPhD Thesis, National University of Singapore."
+					"patching_rect" : [ 19.346436, 28.5, 430.0, 214.0 ],
+					"text" : "The SFA-MaxLib is a collection of Max/MSP objects including FTM externals,\nFTM abstractions and MAX abstractionss.\nSFA-MaxLib Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\nWebsite: www.stefanofasciani.com\n\nThe SFA-MaxLib is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe SFA-MaxLib is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with SFA-MaxLib.  If not, see <http://www.gnu.org/licenses/>."
 				}
 
 			}
@@ -207,7 +201,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-93",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -221,7 +214,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-88",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -857,50 +849,50 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "sfa.fft2barkmxN.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hz2bark.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.count_min_one.js",
-				"bootpath" : "/Users/stefanofasciani/Desktop/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mnm.q.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/ftm-and-co/mnm-abstractions",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/ftm-and-co/mnm-abstractions",
+				"bootpath" : "/Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hz2bark_vect.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hynek_eq_coeff.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.bark2hz_vect.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
