@@ -63,7 +63,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.346436, 280.25, 525.0, 164.0 ],
+					"patching_rect" : [ 19.346436, 305.25, 525.0, 164.0 ],
 					"text" : "FTM abstraction\ncomputes the energy of the banrk bands an inut spectrum.\n\nThe first inlet is the fmat vector containing the frame spectrum.\nThe second inlet input is a 2 element list containing window/frame size and number N of bark bands (the output vector will have N coefficients).\n\nThe first outlet output is an fmat vector containing the energy on of the N bark bands.\n\nThe second outlet output is an fmat vector containing the energy on of the N bark bands with loudness equalization and cube root compression\n\nWorks only for 48KHz sampling rate."
 				}
 
@@ -76,7 +76,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.346436, 244.25, 297.0, 36.0 ],
+					"patching_rect" : [ 19.346436, 269.25, 297.0, 36.0 ],
 					"text" : "sfa.barkspect"
 				}
 
@@ -86,12 +86,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-3",
-					"linecount" : 18,
+					"linecount" : 20,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.346436, 28.5, 430.0, 214.0 ],
-					"text" : "The SFA-MaxLib is a collection of Max/MSP objects including FTM externals,\nFTM abstractions and MAX abstractionss.\nSFA-MaxLib Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\nWebsite: www.stefanofasciani.com\n\nThe SFA-MaxLib is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe SFA-MaxLib is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with SFA-MaxLib.  If not, see <http://www.gnu.org/licenses/>."
+					"patching_rect" : [ 19.346436, 28.5, 430.0, 237.0 ],
+					"text" : "This file is part of the SFA-MaxLib.\n\nThe SFA-MaxLib is a collection of Max/MSP objects including FTM externals,\nFTM abstractions and MAX abstractions.\nSFA-MaxLib Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\nWebsite: www.stefanofasciani.com\n\nThe SFA-MaxLib is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe SFA-MaxLib is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with SFA-MaxLib.  If not, see <http://www.gnu.org/licenses/>."
 				}
 
 			}

@@ -3,9 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 8,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 4
 		}
 ,
 		"rect" : [ 4.0, 44.0, 1525.0, 860.0 ],
@@ -31,7 +30,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-3",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -46,13 +44,12 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-27",
 					"linecount" : 17,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 618.0, 570.0, 213.0 ],
+					"patching_rect" : [ 12.0, 297.0, 570.0, 213.0 ],
 					"text" : "FTM abstraction\ncomputes the PLP or RASTA-PLP coefficient from an audio frame in the time domain\n\nThe first inlet input is the fmat vector containing the audio frame\nThe second inlet input select the computation of PLP (=0) or RASTA-PLP (=1)\nThe thirs inlet input is the feature order scalar\nThe fourth inlet input is the audio frame/window size\nThe fifth inlet input is sampling rate\nThe sixth inlet input bang reset the rasta filter\nThe seventh inlet input bang initialize the computation (mandatory anytime any parameter change)\n\nThe outlet fmat vector contains the PLP or RASTA-PLP coefficients\n\nThis object is part of the Max porting of the function rastaplp.m from Daniel P. W. Ellis \"PLP and RASTA (and MFCC, and inversion) in MATLAB\nhttp://www.ee.columbia.edu/~dpwe/resources/matlab/rastamat/\nporting of rastaplp.m"
 				}
 
@@ -61,12 +58,11 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 24.0,
-					"frgb" : 0.0,
 					"id" : "obj-28",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 582.0, 239.0, 36.0 ],
+					"patching_rect" : [ 12.0, 261.0, 239.0, 36.0 ],
 					"text" : "sfa.rasta-plp"
 				}
 
@@ -75,14 +71,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-2",
-					"linecount" : 47,
+					"linecount" : 20,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 18.0, 430.0, 532.0 ],
-					"text" : "This file is part of the Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI).\n\nThis patch and the related sub patches are based on the porting of the\nfunction rastaplp.m from\nDaniel P. W. Ellis \"PLP and RASTA (and MFCC, and inversion) in Matlab\nhttp://www.ee.columbia.edu/~dpwe/resources/matlab/rastamat/\nwhich is based on:\nH. Hermansky, \"Perceptual linear predictive (PLP) analysis of speech\", J. Acoust. Soc. Am., vol. 87, no. 4, pp. 1738-1752, Apr. 1990.\nH. Hermansky and N. Morgan, \"RASTA processing of speech\", IEEE Trans. on Speech and Audio Proc., vol. 2, no. 4, pp. 578-589, Oct. 1994.\n\nThe Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI) \nis a collection of MAX patches, MAX externals and MATLAB functions \nimplementing ad-hoc mappings to control an arbirtary number of real-valued\ninstrument parameters by variation of the voice timbre.\nThe VCI4DMI can be obtained at http://stefanofasciani.com/vci4dmi.html\nVCI4DMI Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\n\nThe VCI4DMI is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe VCI4DMI is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with Foobar.  If not, see <http://www.gnu.org/licenses/>.\n\nIf you use the VCI4DMI or any part of it in any program or publication,\nplease acknowledge its authors by adding a reference any of these pubblications:\n\nFasciani, S. and Wyse, L. 2012. \"Adapting general purpose interfaces to synthesis\nengines using unsupervised dimensionality reduction techniques and inverse mapping\nfrom features to parameters\". In Proceedings of the 2012 International Computer\nMusic Conference. Ljubljana, Slovenia.\n\nFasciani, S. and Wyse, L. 2013. \"A Self-Organizing Gesture Map for a\nVoice-Controlled Instrument Interface. In Proceedings of the 13th conference\non New Interfaces for Musical Expression\". Daejeon, Korea.\n\nFasciani, S. 2014. \"Voice-Controlled Interface for Digital Musical Instruments\".\nPhD Thesis, National University of Singapore."
+					"patching_rect" : [ 12.0, 18.0, 430.0, 237.0 ],
+					"text" : "This file is part of the SFA-MaxLib.\n\nThe SFA-MaxLib is a collection of Max/MSP objects including FTM externals,\nFTM abstractions and MAX abstractions.\nSFA-MaxLib Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\nWebsite: www.stefanofasciani.com\n\nThe SFA-MaxLib is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe SFA-MaxLib is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with SFA-MaxLib.  If not, see <http://www.gnu.org/licenses/>."
 				}
 
 			}
@@ -120,7 +115,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -160,7 +154,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-93",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -175,7 +168,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-92",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -189,7 +181,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-91",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -203,7 +194,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-88",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -217,7 +207,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-87",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -231,7 +220,6 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"frgb" : 0.0,
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -415,11 +403,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 714.486938, 663.0, 59.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"ftm_objref_conv" : 0,
-						"ftm_scope" : 0
-					}
-,
 					"text" : "sfa.rastafilt"
 				}
 
@@ -593,11 +576,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 610.34906, 1429.0, 61.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"ftm_objref_conv" : 0,
-						"ftm_scope" : 0
-					}
-,
 					"text" : "sfa.lpc2cep"
 				}
 
@@ -633,11 +611,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 610.34906, 1275.0, 63.0, 18.0 ],
-					"saved_object_attributes" : 					{
-						"ftm_objref_conv" : 0,
-						"ftm_scope" : 0
-					}
-,
 					"text" : "sfa.levinson"
 				}
 
@@ -2077,64 +2050,64 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "sfa.fft2barkmx.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.ceil.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hz2bark.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.count_min_one.js",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mnm.q.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/ftm-and-co/mnm-abstractions",
-				"patcherrelativepath" : "../ftm-and-co/mnm-abstractions",
+				"bootpath" : "/Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hz2bark_vect.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.hynek_eq_coeff.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.bark2hz_vect.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sfa.idft_real_coeff.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/sfasciani",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2167,19 +2140,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sfa.levinson.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sfa.lpc2cep.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "gbr.lifter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sfa.rastafilt.mxo",
 				"type" : "iLaX"
 			}
  ]

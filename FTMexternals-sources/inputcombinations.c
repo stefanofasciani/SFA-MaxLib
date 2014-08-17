@@ -1,7 +1,7 @@
 //  This file is part of the SFA-MaxLib.
 //
 //  The SFA-MaxLib is a collection of Max/MSP objects including FTM externals,
-//  FTM abstractions and MAX abstractionss.
+//  FTM abstractions and MAX abstractions.
 //  SFA-MaxLib Copyright (C) 2014 Stefano Fasciani, National University of Singapore
 //  Inquiries: stefanofasciani@stefanofasciani.com
 //  Website: www.stefanofasciani.com
