@@ -2,30 +2,40 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
+			"major" : 7,
 			"minor" : 0,
-			"revision" : 4
+			"revision" : 4,
+			"architecture" : "x86",
+			"modernui" : 1
 		}
 ,
-		"rect" : [ 215.0, 69.0, 1160.0, 899.0 ],
+		"rect" : [ 38.0, 78.0, 1368.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Verdana",
@@ -36,6 +46,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 727.346375, 964.0, 201.5, 43.0 ],
+					"style" : "",
 					"text" : "output bark vector fmat with with loudness equalization and cube root compression"
 				}
 
@@ -50,6 +61,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 501.34906, 971.0, 73.0, 31.0 ],
+					"style" : "",
 					"text" : "output bark vector fmat"
 				}
 
@@ -63,7 +75,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.346436, 305.25, 525.0, 164.0 ],
+					"patching_rect" : [ 23.346436, 566.0, 525.0, 164.0 ],
+					"style" : "",
 					"text" : "FTM abstraction\ncomputes the energy of the banrk bands an inut spectrum.\n\nThe first inlet is the fmat vector containing the frame spectrum.\nThe second inlet input is a 2 element list containing window/frame size and number N of bark bands (the output vector will have N coefficients).\n\nThe first outlet output is an fmat vector containing the energy on of the N bark bands.\n\nThe second outlet output is an fmat vector containing the energy on of the N bark bands with loudness equalization and cube root compression\n\nWorks only for 48KHz sampling rate."
 				}
 
@@ -76,7 +89,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.346436, 269.25, 297.0, 36.0 ],
+					"patching_rect" : [ 23.346436, 530.0, 297.0, 36.0 ],
+					"style" : "",
 					"text" : "sfa.barkspect"
 				}
 
@@ -86,12 +100,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-3",
-					"linecount" : 20,
+					"linecount" : 37,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.346436, 28.5, 430.0, 237.0 ],
-					"text" : "This file is part of the SFA-MaxLib.\n\nThe SFA-MaxLib is a collection of Max/MSP objects including FTM externals,\nFTM abstractions and MAX abstractions.\nSFA-MaxLib Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\nWebsite: www.stefanofasciani.com\n\nThe SFA-MaxLib is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe SFA-MaxLib is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with SFA-MaxLib.  If not, see <http://www.gnu.org/licenses/>."
+					"patching_rect" : [ 23.346436, 86.0, 430.0, 420.0 ],
+					"style" : "",
+					"text" : "This file is part of the Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI).\n\nThe Voice-Controlled Interface for Digital Musical Instruments (VCI4DMI) \nis a collection of MAX patches, MAX externals and MATLAB functions \nimplementing ad-hoc mappings to control an arbirtary number of real-valued\ninstrument parameters by variation of the voice timbre.\nThe VCI4DMI can be obtained at http://stefanofasciani.com/vci4dmi.html\nVCI4DMI Copyright (C) 2014 Stefano Fasciani, National University of Singapore\nInquiries: stefanofasciani@stefanofasciani.com\n\nThe VCI4DMI is free software: you can redistribute it and/or modify\nit under the terms of the GNU Lesser General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThe VCI4DMI is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License\nalong with Foobar.  If not, see <http://www.gnu.org/licenses/>.\n\nIf you use the VCI4DMI or any part of it in any program or publication,\nplease acknowledge its authors by adding a reference any of these pubblications:\n\nFasciani, S. and Wyse, L. 2012. \"Adapting general purpose interfaces to synthesis\nengines using unsupervised dimensionality reduction techniques and inverse mapping\nfrom features to parameters\". In Proceedings of the 2012 International Computer\nMusic Conference. Ljubljana, Slovenia.\n\nFasciani, S. and Wyse, L. 2013. \"A Self-Organizing Gesture Map for a\nVoice-Controlled Instrument Interface. In Proceedings of the 13th conference\non New Interfaces for Musical Expression\". Daejeon, Korea.\n\nFasciani, S. 2014. \"Voice-Controlled Interface for Digital Musical Instruments\".\nPhD Thesis, National University of Singapore."
 				}
 
 			}
@@ -104,12 +119,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 587.34906, 712.0, 71.0, 18.0 ],
+					"patching_rect" : [ 587.34906, 712.0, 71.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"ftm_objref_conv" : 0,
 						"ftm_scope" : 1
 					}
 ,
+					"style" : "",
 					"text" : "ftm.copy fmat"
 				}
 
@@ -123,13 +139,15 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 747.846375, 256.0, 48.0, 18.0 ],
+					"patching_rect" : [ 747.846375, 256.0, 48.0, 20.0 ],
+					"style" : "",
 					"text" : "pack 0 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-10",
@@ -137,8 +155,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 740.846375, 223.0, 66.0, 18.0 ],
-					"text" : "pipe 0 0 200"
+					"patching_rect" : [ 740.846375, 223.0, 60.0, 20.0 ],
+					"style" : "",
+					"text" : "pipe 0 0 10"
 				}
 
 			}
@@ -151,12 +170,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 694.34906, 692.0, 71.0, 18.0 ],
+					"patching_rect" : [ 694.34906, 692.0, 71.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"ftm_objref_conv" : 0,
 						"ftm_scope" : 0
 					}
 ,
+					"style" : "",
 					"text" : "ftm.copy fmat"
 				}
 
@@ -168,7 +188,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 694.34906, 971.0, 24.0, 24.0 ]
+					"patching_rect" : [ 694.34906, 971.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
@@ -179,7 +200,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1042.346436, 160.0, 20.0, 20.0 ]
+					"patching_rect" : [ 1042.346436, 160.0, 20.0, 20.0 ],
+					"style" : ""
 				}
 
 			}
@@ -192,7 +214,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 828.01355, 422.0, 32.5, 16.0 ],
+					"patching_rect" : [ 828.01355, 422.0, 32.5, 20.0 ],
+					"style" : "",
 					"text" : "28"
 				}
 
@@ -206,6 +229,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 587.34906, 189.5, 73.0, 19.0 ],
+					"style" : "",
 					"text" : "input vector"
 				}
 
@@ -219,6 +243,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 727.346375, 72.5, 144.0, 19.0 ],
+					"style" : "",
 					"text" : "list (win size - nbands)"
 				}
 
@@ -231,7 +256,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 727.346375, 100.5, 25.0, 25.0 ]
+					"patching_rect" : [ 727.346375, 100.5, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -244,7 +270,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 890.846375, 398.25, 38.0, 16.0 ],
+					"patching_rect" : [ 890.846375, 398.25, 38.0, 20.0 ],
+					"style" : "",
 					"text" : "48000"
 				}
 
@@ -258,7 +285,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 805.596375, 345.0, 47.0, 16.0 ],
+					"patching_rect" : [ 805.596375, 345.0, 47.0, 20.0 ],
+					"style" : "",
 					"text" : "4096 28"
 				}
 
@@ -272,7 +300,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 974.346436, 90.0, 52.0, 18.0 ],
+					"patching_rect" : [ 974.346436, 90.0, 52.0, 20.0 ],
+					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -284,7 +313,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 587.34906, 971.0, 25.0, 25.0 ]
+					"patching_rect" : [ 587.34906, 971.0, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -296,7 +326,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 587.34906, 217.5, 25.0, 25.0 ]
+					"patching_rect" : [ 587.34906, 217.5, 25.0, 25.0 ],
+					"style" : ""
 				}
 
 			}
@@ -306,6 +337,7 @@
 					"#loadbang" : 0,
 					"#triggerall" : 0,
 					"#untuple" : 0,
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -327,6 +359,7 @@
 					"#loadbang" : 0,
 					"#triggerall" : 0,
 					"#untuple" : 0,
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -351,12 +384,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 812.846375, 589.0, 79.0, 18.0 ],
+					"patching_rect" : [ 812.846375, 589.0, 79.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"ftm_objref_conv" : 0,
 						"ftm_scope" : 0
 					}
 ,
+					"style" : "",
 					"text" : "mnm.transpose"
 				}
 
@@ -367,6 +401,7 @@
 					"#loadbang" : 0,
 					"#triggerall" : 0,
 					"#untuple" : 0,
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -388,6 +423,7 @@
 					"#loadbang" : 0,
 					"#triggerall" : 0,
 					"#untuple" : 0,
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -412,7 +448,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1105.846436, 256.0, 32.5, 16.0 ],
+					"patching_rect" : [ 1105.846436, 256.0, 32.5, 20.0 ],
+					"style" : "",
 					"text" : "clear"
 				}
 
@@ -421,6 +458,7 @@
 				"box" : 				{
 					"description" : "fmat",
 					"editor_interface" : "matrix",
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -448,7 +486,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 812.846375, 557.0, 97.0, 18.0 ],
+					"patching_rect" : [ 812.846375, 557.0, 97.0, 20.0 ],
+					"style" : "",
 					"text" : "sfa.hynek_eq_coeff"
 				}
 
@@ -460,7 +499,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 740.846375, 457.0, 20.0, 20.0 ]
+					"patching_rect" : [ 740.846375, 457.0, 20.0, 20.0 ],
+					"style" : ""
 				}
 
 			}
@@ -470,6 +510,7 @@
 					"#loadbang" : 0,
 					"#triggerall" : 0,
 					"#untuple" : 0,
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -494,12 +535,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 587.34906, 530.0, 111.0, 18.0 ],
+					"patching_rect" : [ 587.34906, 530.0, 111.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"ftm_objref_conv" : 0,
 						"ftm_scope" : 0
 					}
 ,
+					"style" : "",
 					"text" : "mnm.xmul @swap yes"
 				}
 
@@ -513,7 +555,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 710.846375, 398.25, 80.0, 18.0 ],
+					"patching_rect" : [ 710.846375, 398.25, 80.0, 20.0 ],
+					"style" : "",
 					"text" : "sfa.fft2barkmxN"
 				}
 
@@ -527,7 +570,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1105.846436, 195.0, 32.5, 16.0 ],
+					"patching_rect" : [ 1105.846436, 195.0, 32.5, 20.0 ],
+					"style" : "",
 					"text" : "clear"
 				}
 
@@ -538,6 +582,7 @@
 					"#loadbang" : 0,
 					"#triggerall" : 0,
 					"#untuple" : 0,
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -557,6 +602,7 @@
 				"box" : 				{
 					"description" : "fmat",
 					"editor_interface" : "matrix",
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"ftm_objref_conv" : 0,
@@ -845,80 +891,6 @@
 					"source" : [ "obj-9", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "sfa.fft2barkmxN.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sfa.hz2bark.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sfa.count_min_one.js",
-				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : "",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mnm.q.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
-				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/ftm-and-co/mnm-abstractions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sfa.hz2bark_vect.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sfa.hynek_eq_coeff.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sfa.bark2hz_vect.maxpat",
-				"bootpath" : "/Users/stefanofasciani/Desktop/gittemp/SFA-MaxLib/Abstractions",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ftm.object.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.copy.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.minmax.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.xmul.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.transpose.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
